@@ -765,8 +765,7 @@ section {
 }
 
 .team .member .pic img {
-  width: 100%;
-  border-radius: 100%;
+  
   transition: ease-in-out 0.3s;
 }
 
