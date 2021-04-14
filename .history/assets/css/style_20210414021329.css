@@ -634,8 +634,8 @@ section {
   line-height: 1;
 }
 
-.btn-green {
-  background-color: #009961;
+#Navbar ul li a .btn-green {
+  color: #009961;
 }
 
 .about .content p:last-child {
