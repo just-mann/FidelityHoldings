@@ -78,11 +78,13 @@
       if (window.scrollY > 100) {
         selectHeader.classList.add('header-scrolled');
         // selectHeader.style.height = '55px';
-        selectLogo.style.fontSize = '26px';
+        selectLogo.style.fontSize = '28px';
+        selectLogo.style.lineHeight = '0';
       } else {
         selectHeader.classList.remove('header-scrolled');
         // selectHeader.style.height = '70px';
         selectLogo.style.fontSize = '28px';
+        selectLogo.style.lineHeight = '1';
       }
     }
     window.addEventListener('load', headerScrolled)
@@ -255,5 +257,10 @@
       clickable: true
     }
   });
+
+  const estYear = 2019;
+  const d = new Date();
+  const currYear = d.getFullYear()
+  $('#numOfYrs').html(currYear - estYear);
 
 })()

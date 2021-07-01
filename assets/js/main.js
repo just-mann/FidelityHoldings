@@ -258,4 +258,9 @@
     }
   });
 
+  const estYear = 2019;
+  const d = new Date();
+  const currYear = d.getFullYear()
+  $('#numOfYrs').html(currYear - estYear);
+
 })()
