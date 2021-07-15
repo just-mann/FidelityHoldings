@@ -767,14 +767,8 @@ section {
 
 
 .galleryCard:nth-child(1) {
-  height: 400px;
+  min-height: 450px;
   grid-column: span 3;
-}
-
-
-.galleryCard:nth-child(2) {
-  height: 330px;
-  /* grid-column: span 3; */
 }
 
 .galleryCard:nth-child(3) {
@@ -1488,19 +1482,13 @@ select option:hover {
   }
 
   .galleryCard {
-    height: 350px;
     width: 100%;
+    
     grid-column: span 3;
   }
 
-  .galleryCard:nth-child(1) {
-    min-height: 100px;
-  }
-
-
   .galleryCard img {
     width: 100%;
-    min-height: 100%;
   }
 }
 

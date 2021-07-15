@@ -759,7 +759,7 @@ section {
 
 .galleryCard {
   box-shadow: rgba(94, 97, 99, 0.48) 6px 2px 16px 0px, rgba(216, 216, 216, 0.658) -6px -2px 16px 0px;
-  height: 350px;
+  height: 320px;
   /* border-radius: 10px; */
   border: 7px solid rgba(129, 129, 129, 0.288);
   object-fit: cover;
@@ -767,11 +767,9 @@ section {
 
 
 .galleryCard:nth-child(1) {
-  height: 400px;
+  height: 350px;
   grid-column: span 3;
 }
-
-
 .galleryCard:nth-child(2) {
   height: 330px;
   /* grid-column: span 3; */
@@ -1488,7 +1486,7 @@ select option:hover {
   }
 
   .galleryCard {
-    height: 350px;
+    height: 30px;
     width: 100%;
     grid-column: span 3;
   }
