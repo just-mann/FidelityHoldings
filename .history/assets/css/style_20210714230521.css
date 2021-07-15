@@ -759,7 +759,7 @@ section {
 
 .galleryCard {
   box-shadow: rgba(94, 97, 99, 0.48) 6px 2px 16px 0px, rgba(216, 216, 216, 0.658) -6px -2px 16px 0px;
-  height: 350px;
+  min-heheight: 350px;
   /* border-radius: 10px; */
   border: 7px solid rgba(129, 129, 129, 0.288);
   object-fit: cover;
