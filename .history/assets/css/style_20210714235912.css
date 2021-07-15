@@ -1488,24 +1488,24 @@ select option:hover {
 
   .galleryCard:nth-child(1) {
     height: 206px;
-    width: 100%;
+    width: 
   }
 
   
 .galleryCard:nth-child(3) {
   grid-column: span 3;
-  width: 100%;
+  width: 
 }
 
 .galleryCard:nth-child(4) {
   grid-column: span 3;
-  width: 100%;
+  width: 
 }
 
 
 .galleryCard:nth-child(7) {
   grid-column: span 3;
-  width: 100%;
+  width: 
 }
 
 
