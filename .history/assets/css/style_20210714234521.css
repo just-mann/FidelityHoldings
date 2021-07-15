@@ -759,7 +759,7 @@ section {
 
 .galleryCard {
   box-shadow: rgba(94, 97, 99, 0.48) 6px 2px 16px 0px, rgba(216, 216, 216, 0.658) -6px -2px 16px 0px;
-  height: 380px;
+  height: 350px;
   /* border-radius: 10px; */
   border: 7px solid rgba(129, 129, 129, 0.288);
   object-fit: cover;
@@ -772,14 +772,22 @@ section {
 }
 
 
+.galleryCard:nth-child(2) {
+  height: 330px;
+  /* grid-column: span 3; */
+}
+
 .galleryCard:nth-child(3) {
   grid-column: span 2;
 }
 
 .galleryCard:nth-child(4) {
-  grid-column: span 2;
+  /* grid-column: span 2; */
 }
 
+.galleryCard:nth-child(5) {
+  grid-column: span 2;
+}
 
 .galleryCard:nth-child(7) {
   grid-column: span 2;
@@ -1480,14 +1488,14 @@ select option:hover {
   }
 
   .galleryCard {
-    height: 400px;
+    height: 350px;
     width: 100%;
-    margin: 0 auto;
+    margin: 0 ;
     grid-column: span 3;
   }
 
   .galleryCard:nth-child(1) {
-    min-height: 90px;
+    min-height: 100px;
   }
 
 
