@@ -273,16 +273,7 @@
       message:document.getElementById("message").value 
     };
 
-    emailjs.send('service_xpvetpe', 'template_fanjzrh', tempParams)
-      .then((res) => {
-        console.log('Success', res.status);
-      })
+    emailjs.send('gmail', '')
   }
-
-  let submitRequest = document.getElementById('submitRequest');
-  submitRequest.addEventListener('click', (e) => {
-    e.preventDefault();
-    requestService();
-  });
 
 })()

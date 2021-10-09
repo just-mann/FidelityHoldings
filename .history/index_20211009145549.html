@@ -23,11 +23,27 @@
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            // https://dashboard.emailjs.com/admin/integration
+            emailjs.init('user_FnVx5F7jGIHDjqj2JHlZT');
+        })();
+    </script>
   <script type="text/javascript">
-    (function() {
-      emailjs.init("user_FnVx5F7jGIHDjqj2JHlZT");
-    })();
-  </script>
+  // Contact Form
+    // window.onload = function() {
+      const sendEmail = (e) => {
+        e.preventDefault();
+
+        emailjs.sendForm('service_xpvetpe', 'template_fanjzrh', form.current, 'user_FnVx5F7jGIHDjqj2JHlZT')
+          .then((result) => {
+              console.log(result.text);
+          }, (error) => {
+              console.log(error.text);
+          });
+      }; 
+    // }
+</script>
 </head>
 <body>
   <!-- Header -->
@@ -456,7 +472,7 @@
               </div>
             </div>
             <!-- Form -->
-            <form  name="contact" class="php-email-form mt-4" id="contact-form">
+            <form  name="contact" onsubmit="sendEmail()"  class="php-email-form mt-4" id="contact-form">
               <div class="row">
                 <div class="col-md-6 form-group">
                   <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
@@ -464,26 +480,26 @@
                 <div class="col-md-6 form-group mt-3 mt-md-0">
                   <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
                 </div>
-                <select name="service" id="service" class="m-3 mt-md-0 col p-2 form-group">
+                <select name="service" id="select" class="m-3 mt-md-0 col p-2 form-group">
                   <option value="selectService(s)">Select Service(s)</option>
-                  <option value="Clearing & Forwarding">Clearing & Forwarding</option>
-                  <option value="Security Guard Services">Security Guard Services</option>
-                  <option value="Car Rental">Car Rental</option>
-                  <option value="Construction">Construction</option>
-                  <option value="Online Marketing">Online Marketing</option>
-                  <option value="Buy & SellMinerals">Buy & Sell Minerals</option>
-                  <option value="Construction Consultancy">Construction Consultancy</option>
+                  <option value="clearing&Forwarding">Clearing & Forwarding</option>
+                  <option value="securityGuardServices">Security Guard Services</option>
+                  <option value="carRental">Car Rental</option>
+                  <option value="construction">Construction</option>
+                  <option value="onlineMarketing">Online Marketing</option>
+                  <option value="buy&SellMinerals">Buy & Sell Minerals</option>
+                  <option value="constructionConsultancy">Construction Consultancy</option>
                 </select>
               </div>
               <div class="form-group mt-3">
-                <textarea class="form-control" id="message" name="message" rows="5" placeholder="Message" required></textarea>
+                <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
               </div>
               <div class="my-3">
                 <div class="loading">Loading</div>
                 <div class="error-message"></div>
                 <div class="sent-message">Your message has been sent. Thank you!</div>
               </div>
-              <div class="text-center"><button type="submit" id="submitRequest">Send Message</button></div>
+              <div class="text-center"><button type="submit">Send Message</button></div>
             </form>
           </div>
         </div>

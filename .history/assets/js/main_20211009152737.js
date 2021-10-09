@@ -265,24 +265,6 @@
 
 
   // Submit Contact Form
-  function requestService(params) {
-    var tempParams = {
-      name:document.getElementById("name").value, 
-      email:document.getElementById("email").value,
-      service:document.getElementById("service").value,
-      message:document.getElementById("message").value 
-    };
-
-    emailjs.send('service_xpvetpe', 'template_fanjzrh', tempParams)
-      .then((res) => {
-        console.log('Success', res.status);
-      })
-  }
-
-  let submitRequest = document.getElementById('submitRequest');
-  submitRequest.addEventListener('click', (e) => {
-    e.preventDefault();
-    requestService();
-  });
+  console.log('it is console')
 
 })()

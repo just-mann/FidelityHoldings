@@ -273,7 +273,7 @@
       message:document.getElementById("message").value 
     };
 
-    emailjs.send('service_xpvetpe', 'template_fanjzrh', tempParams)
+    emailjs.send('', 'template_fanjzrh', tempParams)
       .then((res) => {
         console.log('Success', res.status);
       })
